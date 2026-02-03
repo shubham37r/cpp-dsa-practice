@@ -1,4 +1,4 @@
-#Two Pointer Approach on Arrays
+Two Pointer Approach on Arrays
 
 This repository contains solutions to classic array problems using the Two Pointer technique. The two pointer approach helps reduce time complexity and improves efficiency by avoiding unnecessary nested loops.
 
