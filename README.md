@@ -39,6 +39,8 @@ public:
 };
 ```
 
+
+
 2️⃣ Remove Duplicates from Sorted Array
 
 LeetCode 26
@@ -76,5 +78,57 @@ public:
 • Efficient traversal of sorted arrays
 • In-place array modification
 • Two pointer optimization technique
+
+
+
+3️⃣ Valid Palindrome (Two Pointers)
+
+LeetCode 125
+https://leetcode.com/problems/valid-palindrome/
+
+✅ Check if a string is a palindrome considering only alphanumeric characters and ignoring cases.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+```cpp
+#include <string>
+using namespace std;
+
+class Solution {
+public:
+    bool isPalindrome(string s) {
+
+        string cleaned = "";
+
+        // Remove non-alphanumeric characters and convert to lowercase
+        for(char c : s){
+            if(isalnum(c)){
+                cleaned += tolower(c);
+            }
+        }
+
+        // Two pointer approach
+        int left = 0;
+        int right = cleaned.size() - 1;
+
+        while(left < right){
+            if(cleaned[left] != cleaned[right])
+                return false;
+
+            left++;
+            right--;
+        }
+
+        return true;
+    }
+};
+```
+
+🧠 Key Learning
+
+• String preprocessing and filtering
+• Two pointer technique on strings
+• Palindrome validation logic
 
 ⭐ More problems will be added soon.
