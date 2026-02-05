@@ -52,8 +52,6 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 
 ```cpp
-#include <vector>
-using namespace std;
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
@@ -92,9 +90,6 @@ Time Complexity: O(n)
 Space Complexity: O(n)
 
 ```cpp
-#include <string>
-using namespace std;
-
 class Solution {
 public:
     bool isPalindrome(string s) {
