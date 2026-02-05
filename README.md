@@ -3,7 +3,7 @@ Two Pointer Approach on Arrays 🚀
 Beginner friendly implementations of array problems solved using the Two Pointer Technique.
 
 📚 Problems
-1️⃣ Two Sum II (Sorted Array)
+1️⃣ Two Sum II - Sorted Array  (Two Pointers)
 
 LeetCode 167
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
@@ -41,7 +41,7 @@ public:
 
 
 
-2️⃣ Remove Duplicates from Sorted Array
+2️⃣ Remove Duplicates from Sorted Array (Two Pointers)
 
 LeetCode 26
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/
@@ -125,5 +125,51 @@ public:
 • String preprocessing and filtering
 • Two pointer technique on strings
 • Palindrome validation logic
+
+
+
+4️⃣ Container With Most Water (Two Pointers)
+
+LeetCode 11 https://leetcode.com/problems/container-with-most-water/
+
+✅ Find two lines that together with the x-axis form a container that stores the maximum amount of water.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+```cpp
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+
+        int left = 0;
+        int right = height.size() - 1;
+
+        int maxArea = 0;
+
+        while(left < right){
+
+            int currArea = min(height[left], height[right]) * (right - left);
+
+            maxArea = max(maxArea, currArea);
+
+            if(height[left] < height[right]){
+                left++;
+            }else{
+                right--;
+            }
+        }
+
+        return maxArea;
+    }
+};
+```
+
+
+🧠 Key Learning
+
+• Understanding two pointer optimization
+• Reducing time complexity from O(n²) to O(n)
+
 
 ⭐ More problems will be added soon.
