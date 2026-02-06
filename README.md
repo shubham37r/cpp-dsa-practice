@@ -13,9 +13,6 @@ https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 Time Complexity: O(n)
 Space Complexity: O(1)
 
-#include <vector>
-using namespace std;
-
 ```cpp
 class Solution {
 public:
@@ -38,6 +35,10 @@ public:
     }
 };
 ```
+🧠 Key Learning
+
+• Efficient searching target in sorted arrays
+• Two pointer optimization technique
 
 
 
@@ -164,7 +165,6 @@ public:
     }
 };
 ```
-
 
 🧠 Key Learning
 
