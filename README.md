@@ -3,6 +3,7 @@ Two Pointer Approach on Arrays 🚀
 Beginner friendly implementations of array problems solved using the Two Pointer Technique.
 
 📚 Problems
+
 1️⃣ Two Sum II - Sorted Array  (Two Pointers)
 
 LeetCode 167
@@ -170,6 +171,44 @@ public:
 
 • Understanding two pointer optimization
 • Reducing time complexity from O(n²) to O(n)
+
+
+
+📚 Problems
+5️⃣ Remove Element (Two Pointers)
+
+LeetCode 27
+https://leetcode.com/problems/remove-element/
+
+✅ Remove all occurrences of a given value in place and return the new length of the array.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+```cpp
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int n = nums.size();
+        int j = 0;
+
+        for(int i = 0; i < n; i++) {
+            if(nums[i] != val) {
+                nums[j] = nums[i];
+                j++;
+            }
+        }
+        return j;
+    }
+};
+```
+
+
+🧠 Key Learning
+
+• In place array modification without extra memory
+• Using two pointers for efficient filtering
+• Maintaining valid elements at the beginning of array
 
 
 ⭐ More problems will be added soon.
