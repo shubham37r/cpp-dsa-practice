@@ -211,4 +211,18 @@ public:
 • Maintaining valid elements at the beginning of array
 
 
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if(x < 0): return False
+
+        org = x
+        rev = 0
+
+        while(x != 0) : 
+            ld = x%10
+            rev = rev*10 + ld
+            x = x//10
+        return org == rev
+
+
 ⭐ More problems will be added soon.
