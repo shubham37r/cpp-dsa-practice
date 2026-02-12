@@ -2,8 +2,6 @@ Two Pointer Approach on Arrays 🚀
 
 Beginner friendly implementations of array problems solved using the Two Pointer Technique.
 
-📚 Problems
-
 1️⃣ Two Sum II - Sorted Array  (Two Pointers)
 
 LeetCode 167
@@ -77,7 +75,6 @@ public:
 
 • Efficient traversal of sorted arrays
 • In-place array modification
-• Two pointer optimization technique
 
 
 
@@ -125,7 +122,6 @@ public:
 🧠 Key Learning
 
 • String preprocessing and filtering
-• Two pointer technique on strings
 • Palindrome validation logic
 
 
@@ -174,7 +170,6 @@ public:
 
 
 
-📚 Problems
 5️⃣ Remove Element (Two Pointers)
 
 LeetCode 27
@@ -207,7 +202,6 @@ public:
 🧠 Key Learning
 
 • In place array modification without extra memory
-• Using two pointers for efficient filtering
 • Maintaining valid elements at the beginning of array
 
 
