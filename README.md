@@ -40,7 +40,6 @@ public:
 • Two pointer optimization technique
 
 
-
 2️⃣ Remove Duplicates from Sorted Array (Two Pointers)
 
 LeetCode 26
@@ -75,7 +74,6 @@ public:
 
 • Efficient traversal of sorted arrays
 • In-place array modification
-
 
 
 3️⃣ Valid Palindrome (Two Pointers)
@@ -148,7 +146,6 @@ public:
 • Palindrome validation logic
 
 
-
 4️⃣ Container With Most Water (Two Pointers)
 
 LeetCode 11 https://leetcode.com/problems/container-with-most-water/
@@ -190,7 +187,6 @@ public:
 
 • Understanding two pointer optimization
 • Reducing time complexity from O(n²) to O(n)
-
 
 
 5️⃣ Remove Element (Two Pointers)
