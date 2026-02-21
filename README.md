@@ -223,4 +223,40 @@ public:
 • Maintaining valid elements at the beginning of array
 
 
+5️ Move Zeros (Two Pointers)
+
+LeetCode 283
+https://leetcode.com/problems/move-zeroes/
+
+✅ move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+```cpp
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        int n = nums.size(); // size of array
+
+        int left = 0;
+        
+        for(int right = 0; right<n; right++){
+            if(nums[right] != 0){
+                int temp = nums[right];
+                nums[right] = nums[left];
+                nums[left] = temp;
+                left++;
+            }
+        }
+    }
+};
+```
+
+🧠 Key Learning
+
+• In place array modification without extra memory
+• Maintaining valid elements at the beginning of array
+
+
 ⭐ More problems will be added soon.
