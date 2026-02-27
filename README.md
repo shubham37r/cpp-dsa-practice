@@ -223,12 +223,12 @@ public:
 • Maintaining valid elements at the beginning of array
 
 
-5️ Move Zeros (Two Pointers)
+6️⃣ Move Zeroes (Two Pointers)
 
 LeetCode 283
 https://leetcode.com/problems/move-zeroes/
 
-✅ move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+✅ Move all 0s to the end of the array while maintaining the relative order of the non-zero elements.
 
 Time Complexity: O(n)
 Space Complexity: O(1)
@@ -237,12 +237,11 @@ Space Complexity: O(1)
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
-        int n = nums.size(); // size of array
-
+        int n = nums.size();
         int left = 0;
-        
-        for(int right = 0; right<n; right++){
-            if(nums[right] != 0){
+
+        for (int right = 0; right < n; right++) {
+            if (nums[right] != 0) {
                 int temp = nums[right];
                 nums[right] = nums[left];
                 nums[left] = temp;
@@ -256,7 +255,8 @@ public:
 🧠 Key Learning
 
 • In place array modification without extra memory
-• Maintaining valid elements at the beginning of array
+• Maintaining the relative order of non-zero elements
+• Using two pointers to compact valid elements efficiently
 
 
 ⭐ More problems will be added soon.
